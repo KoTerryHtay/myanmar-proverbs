@@ -15,7 +15,9 @@ export default function HomePage({
 
   return (
     <div className="py-3 px-10 flex flex-col">
-      <div className="font-bold p-1 text-white text-lg">Random Proverbs</div>
+      <div className="font-bold p-1 text-white text-lg">
+        {`${searchParams.search ? "Search" : "Random"}`} Proverbs
+      </div>
       <div>
         {!!searchParams.search ? (
           <div>
